@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	SNMP
+%define		pdir	Net
+%define		pnam	SNMP
 Summary:	Net::SNMP - object oriented interface to SNMP
 Summary(pl):	Net::SNMP - zorientowany obiektowo interfejs do SNMP
 Name:		perl-Net-SNMP
