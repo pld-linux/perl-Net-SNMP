@@ -30,7 +30,7 @@ Obiektowo zorientowany interfejs do SNMP.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
