@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Crypt-DES >= 2.0.3
 BuildRequires:	perl-Digest-HMAC
 BuildRequires:	perl-Digest-SHA1
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	perl-Crypt-DES >= 2.0.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
