@@ -4,12 +4,12 @@
 Summary:	Object oriented interface to SNMP
 Summary(pl):	Obiektowo zorientowany interfejs do SNMP
 Name:		perl-Net-SNMP
-Version:	4.0.3
-Release:	3
+Version:	4.1.2
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	88a1f361092bfb560b629e61db4f0da3
+# Source0-md5:	e6b761db6115b0b1fe5446e220abaa4a
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-Crypt-DES >= 2.0.3
 BuildRequires:	perl-Digest-HMAC
