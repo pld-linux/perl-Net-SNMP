@@ -2,13 +2,13 @@
 Summary:	Object oriented interface to SNMP
 Summary(pl):	Objektowo zorientowany interfejs do SNMP
 Name:		perl-Net-SNMP
-Version:	4.0.0
+Version:	4.0.1
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	http://www.cpan.org/authors/id/D/DT/DTOWN/Net-SNMP-4.0.0.tar.gz
+Source0:	http://www.cpan.org/authors/id/D/DT/DTOWN/Net-SNMP-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Crypt-DES >= 2.0.3
