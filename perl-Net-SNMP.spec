@@ -25,6 +25,9 @@ Requires:	perl-Crypt-DES >= 2.0.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# optional (not required if not using v6)
+%define		_noautoreq	perl(Socket6) perl(IO::Socket::INET6)
+
 %description
 The Net::SNMP Perl module implements an object oriented interface to
 the Simple Network Management Protocol.  Perl applications can use the
