@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	SNMP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Object oriented interface to SNMP
 Summary(pl):	Objektowo zorientowany interfejs do SNMP
 Name:		perl-Net-SNMP
 Version:	4.0.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +25,7 @@ Object oriented interface to SNMP.
 Objektowo zorientowany interfejs do SNMP.
 
 %prep
-%setup -q -n Net-SNMP-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
