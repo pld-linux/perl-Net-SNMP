@@ -1,0 +1,11 @@
+--- ./lib/Net/SNMP/Security/USM.pm~	2003-09-11 21:10:19.000000000 +0200
++++ ./lib/Net/SNMP/Security/USM.pm	2004-06-14 09:39:51.442301024 +0200
+@@ -33,7 +33,7 @@
+ 
+ ## Version of the Net::SNMP::Security::USM module
+ 
+-our $VERSION = v2.0.2;
++our $VERSION = 2.0.2;
+ 
+ ## Package variables
+ 
