@@ -5,7 +5,7 @@ Summary:	Object oriented interface to SNMP
 Summary(pl):	Obiektowo zorientowany interfejs do SNMP
 Name:		perl-Net-SNMP
 Version:	4.0.3
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -36,7 +36,8 @@ Obiektowo zorientowany interfejs do SNMP.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
