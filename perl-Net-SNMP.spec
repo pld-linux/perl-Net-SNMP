@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	SNMP
 Summary:	Net::SNMP - object oriented interface to SNMP
-Summary(pl):	Net::SNMP - zorientowany obiektowo interfejs do SNMP
+Summary(pl.UTF-8):   Net::SNMP - zorientowany obiektowo interfejs do SNMP
 Name:		perl-Net-SNMP
 Version:	5.0.1
 Release:	1
@@ -37,14 +37,14 @@ SNMP protocol.  The module supports SNMP version-1, SNMP version-2c
 assumes that the user has a basic understanding of the Simple Network
 Management Protocol and related network management concepts.
 
-%description -l pl
-Modu≥ Perla Net::SNMP stanowi zorientowan± obiektowo implementacjÍ
-interfejsu do protoko≥u SNMP (Simple Network Management Protocol).
-Programy perlowe mog± korzystaÊ z tego modu≥u do pobierania i
-aktualizacji informacji na zdalnych hostach uøywaj±c protoko≥u SNMP.
-Modu≥ ten obs≥uguje wersje protoko≥u SNMP: 1, 2c (Community-Based
-SNMPv2) oraz 3. Modu≥ Net::SNMP zak≥ada, øe uøytkownik rozumie w
-podstawowym zakresie protokÛ≥ SNMP i zwi±zane z nim idee zarz±dzania
+%description -l pl.UTF-8
+Modu≈Ç Perla Net::SNMP stanowi zorientowanƒÖ obiektowo implementacjƒô
+interfejsu do protoko≈Çu SNMP (Simple Network Management Protocol).
+Programy perlowe mogƒÖ korzystaƒá z tego modu≈Çu do pobierania i
+aktualizacji informacji na zdalnych hostach u≈ºywajƒÖc protoko≈Çu SNMP.
+Modu≈Ç ten obs≈Çuguje wersje protoko≈Çu SNMP: 1, 2c (Community-Based
+SNMPv2) oraz 3. Modu≈Ç Net::SNMP zak≈Çada, ≈ºe u≈ºytkownik rozumie w
+podstawowym zakresie protok√≥≈Ç SNMP i zwiƒÖzane z nim idee zarzƒÖdzania
 sieciowego.
 
 %prep
