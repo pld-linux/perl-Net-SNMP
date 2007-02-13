@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	SNMP
 Summary:	Net::SNMP - object oriented interface to SNMP
-Summary(pl.UTF-8):   Net::SNMP - zorientowany obiektowo interfejs do SNMP
+Summary(pl.UTF-8):	Net::SNMP - zorientowany obiektowo interfejs do SNMP
 Name:		perl-Net-SNMP
 Version:	5.0.1
 Release:	1
