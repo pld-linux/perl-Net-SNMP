@@ -4,8 +4,8 @@
  
  ## Version of the Net::SNMP::Security::USM module
  
--our $VERSION = v2.1.0;
-+our $VERSION = '2.1.0';
+-our $VERSION = v3.0.1;
++our $VERSION = '3.0.1';
  
- ## Package variables
+ ## Handle importing/exporting of symbols
  
