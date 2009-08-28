@@ -8,18 +8,18 @@
 Summary:	Net::SNMP - object oriented interface to SNMP
 Summary(pl.UTF-8):	Net::SNMP - zorientowany obiektowo interfejs do SNMP
 Name:		perl-Net-SNMP
-Version:	5.0.1
-Release:	2
+Version:	5.2.0
+Release:	1
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	840e17ee75a68cad98c53a54d65b8751
+# Source0-md5:	0e717723f843ab22a93248833f3ebff7
 Patch0:		%{name}-kill_vstring.patch
-BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Crypt-DES >= 2.0.3
 BuildRequires:	perl-Digest-HMAC
 BuildRequires:	perl-Digest-SHA1
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Crypt-DES >= 2.0.3
 BuildArch:	noarch
@@ -30,10 +30,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Net::SNMP Perl module implements an object oriented interface to
-the Simple Network Management Protocol.  Perl applications can use the
+the Simple Network Management Protocol. Perl applications can use the
 module to retrieve or update information on a remote host using the
-SNMP protocol.  The module supports SNMP version-1, SNMP version-2c
-(Community-Based SNMPv2), and SNMP version-3.  The Net::SNMP module
+SNMP protocol. The module supports SNMP version-1, SNMP version-2c
+(Community-Based SNMPv2), and SNMP version-3. The Net::SNMP module
 assumes that the user has a basic understanding of the Simple Network
 Management Protocol and related network management concepts.
 
@@ -64,13 +64,17 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README* Changes
+%doc README Changes
 %attr(755,root,root) %{_bindir}/*
 %{perl_vendorlib}/Net/*.pm
 %{perl_vendorlib}/Net/SNMP
 %{_mandir}/man?/*
+%{_examplesdir}/%{name}-%{version}
