@@ -9,7 +9,7 @@ Summary:	Net::SNMP - object oriented interface to SNMP
 Summary(pl.UTF-8):	Net::SNMP - zorientowany obiektowo interfejs do SNMP
 Name:		perl-Net-SNMP
 Version:	5.2.0
-Release:	1
+Release:	2
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
