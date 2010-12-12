@@ -1,21 +1,22 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Net
 %define		pnam	SNMP
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::SNMP - object oriented interface to SNMP
 Summary(pl.UTF-8):	Net::SNMP - zorientowany obiektowo interfejs do SNMP
 Name:		perl-Net-SNMP
-Version:	5.2.0
-Release:	2
+Version:	6.0.1
+Release:	1
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0e717723f843ab22a93248833f3ebff7
+Source0:	http://search.cpan.org/CPAN/authors/id/D/DT/DTOWN/%{pdir}-%{pnam}-v%{version}.tar.gz
+# Source0-md5:	6137f04f9942d703f66179f890e3d096
 Patch0:		%{name}-kill_vstring.patch
+URL:		http://search.cpan.org/dist/Net-SNMP/
 BuildRequires:	perl-Crypt-DES >= 2.0.3
 BuildRequires:	perl-Digest-HMAC
 BuildRequires:	perl-Digest-SHA1
@@ -48,8 +49,8 @@ podstawowym zakresie protokół SNMP i związane z nim idee zarządzania
 sieciowego.
 
 %prep
-%setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p0
+%setup -q -n %{pdir}-%{pnam}-v%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
@@ -60,12 +61,11 @@ sieciowego.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-cp -a examples $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -73,8 +73,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/snmpkey
 %{perl_vendorlib}/Net/*.pm
 %{perl_vendorlib}/Net/SNMP
-%{_mandir}/man?/*
+%{_mandir}/man1/snmpkey.1p*
+%{_mandir}/man3/Net::SNMP.3pm*
 %{_examplesdir}/%{name}-%{version}

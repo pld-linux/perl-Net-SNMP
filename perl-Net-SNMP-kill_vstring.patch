@@ -1,11 +1,11 @@
---- ./lib/Net/SNMP/Security/USM.pm~	2003-09-11 21:10:19.000000000 +0200
-+++ ./lib/Net/SNMP/Security/USM.pm	2004-06-14 09:39:51.442301024 +0200
-@@ -33,7 +33,7 @@
+--- Net-SNMP-v6.0.1/lib/Net/SNMP/Security/USM.pm~	2010-12-12 14:00:52.000000000 +0200
++++ Net-SNMP-v6.0.1/lib/Net/SNMP/Security/USM.pm	2010-12-12 14:00:55.553134379 +0200
+@@ -30,7 +30,7 @@
  
  ## Version of the Net::SNMP::Security::USM module
  
--our $VERSION = v3.0.1;
-+our $VERSION = '3.0.1';
+-our $VERSION = v4.0.1;
++our $VERSION = '4.0.1';
  
  ## Handle importing/exporting of symbols
  
