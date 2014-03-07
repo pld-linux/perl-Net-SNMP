@@ -13,7 +13,7 @@ Release:	2
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DT/DTOWN/%{pdir}-%{pnam}-v%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net//%{pdir}-%{pnam}-v%{version}.tar.gz
 # Source0-md5:	6137f04f9942d703f66179f890e3d096
 Patch0:		%{name}-kill_vstring.patch
 URL:		http://search.cpan.org/dist/Net-SNMP/
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README Changes
 %attr(755,root,root) %{_bindir}/snmpkey
-%{perl_vendorlib}/Net/*.pm
+%{perl_vendorlib}/Net/SNMP.pm
 %{perl_vendorlib}/Net/SNMP
 %{_mandir}/man1/snmpkey.1p*
 %{_mandir}/man3/Net::SNMP.3pm*
