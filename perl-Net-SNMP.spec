@@ -13,7 +13,7 @@ Release:	2
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Net//%{pdir}-%{pnam}-v%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-v%{version}.tar.gz
 # Source0-md5:	6137f04f9942d703f66179f890e3d096
 Patch0:		%{name}-kill_vstring.patch
 URL:		http://search.cpan.org/dist/Net-SNMP/
